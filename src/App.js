@@ -1,10 +1,10 @@
 import React from 'react'
-import A
+import AISearch from "./components/AISearch.jsx"
 function App() {
   return (
-    <div className='App'>
-      <AISearch/>
-      
+    <div>
+      <AISearch />
+
     </div>
   )
 }
