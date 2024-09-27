@@ -1,2 +1,2 @@
 
-export const GEMINIAI_KEY = import.meta.env.VITE_GEMINIAI_KEY;
+export const GEMINIAI_KEY = "AIzaSyAnKRHHf0Ce-T6VuGHtF2OCDMEe9DlXLhY";

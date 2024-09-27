@@ -1,5 +1,3 @@
-
-
 import React, { useRef, useState } from "react";
 import openai from "../utils/openai";
 import ReactMarkDown from "react-markdown";
@@ -10,7 +8,7 @@ const AISearch = () => {
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(false);
   const handleAISearch = async () => {
-    const prompt = `Act an an AI recommendation system and give me relevant output based on ${searchText.current.value}`;
+    const prompt = `You are an intelligent AI coding assistant. Your primary tasks are to debug code by identifying errors and suggesting improvements, write clear and informative comments to explain the code functionality, and provide detailed explanations of any mistakes found. For example, if a code snippet contains a TypeError due to incompatible data types, you should explain the issue and suggest converting the data types to resolve the error. ${searchText.current.value}`;
     try {
       setLoading(true);
       setError(null);
@@ -41,11 +39,11 @@ const AISearch = () => {
         <input
           type="text"
           className="form-control"
-          placeholder="search your movie"
+          placeholder="Ai coding assissant"
           ref={searchText}
         />
         <button className="btn btn-info text-nowrap " onClick={handleAISearch}>
-          Search Movie
+          Search
         </button>
       </div>
       {loading ? (
